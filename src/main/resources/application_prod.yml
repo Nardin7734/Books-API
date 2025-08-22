@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: interact
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/interact_challenge?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: interact*123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+logging:
+  level:
+    com.dn: DEBUG
+
+security:
+  jwt:
+    secret-key: verysecretkeyhomygodverysecretkeyhomygodverysecretkeyhomygod

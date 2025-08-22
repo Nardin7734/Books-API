@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+/target/
+
+# Arquivos de sistema (macOS, Windows, Linux)
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
