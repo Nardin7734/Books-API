@@ -1,4 +1,4 @@
-package com.interact.security;
+package com.dn.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

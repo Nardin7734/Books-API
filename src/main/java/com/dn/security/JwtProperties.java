@@ -1,4 +1,4 @@
-package com.interact.security;
+package com.dn.security;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

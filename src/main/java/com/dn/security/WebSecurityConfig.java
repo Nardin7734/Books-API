@@ -1,4 +1,4 @@
-package com.interact.security;
+package com.dn.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.interact;
+package com.dn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

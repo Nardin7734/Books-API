@@ -1,20 +1,19 @@
-package com.interact.services;
+package com.dn.services;
 
-import com.interact.data.dto.BookDTO;
-import com.interact.data.dto.LoanDTO;
-import com.interact.data.dto.UserDTO;
-import com.interact.mappers.ObjectMapper;
-import com.interact.models.Book;
-import com.interact.models.Loan;
-import com.interact.models.User;
-import com.interact.repositories.LoanRepository;
+import com.dn.data.dto.BookDTO;
+import com.dn.data.dto.LoanDTO;
+import com.dn.data.dto.UserDTO;
+import com.dn.mappers.ObjectMapper;
+import com.dn.models.Book;
+import com.dn.models.Loan;
+import com.dn.models.User;
+import com.dn.repositories.LoanRepository;
 import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 import java.util.logging.Logger;
 
 @Service

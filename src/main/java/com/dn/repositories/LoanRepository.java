@@ -1,8 +1,8 @@
-package com.interact.repositories;
+package com.dn.repositories;
 
-import com.interact.models.Book;
-import com.interact.models.Loan;
-import com.interact.models.User;
+import com.dn.models.Book;
+import com.dn.models.Loan;
+import com.dn.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

@@ -1,14 +1,10 @@
-package com.interact.data.dto;
+package com.dn.data.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.interact.models.User;
-import jakarta.persistence.*;
+import com.dn.models.User;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 public class UserDTO
@@ -113,7 +109,7 @@ public class UserDTO
     public boolean equals(Object o)
     {
         if (o == null || getClass() != o.getClass()) return false;
-        com.interact.models.User user = (com.interact.models.User) o;
+        User user = (User) o;
         return getId() == user.getId() && Objects.equals(getEmail(), user.getEmail());
     }
 

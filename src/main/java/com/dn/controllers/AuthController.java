@@ -1,11 +1,10 @@
-package com.interact.controllers;
+package com.dn.controllers;
 
-import com.interact.data.dto.UserDTO;
-import com.interact.security.JwtIssuer;
-import com.interact.data.dto.LoginDTO;
-import com.interact.data.dto.LoginResponseDTO;
-import com.interact.security.UserPrincipal;
-import com.interact.services.UserServices;
+import com.dn.security.JwtIssuer;
+import com.dn.data.dto.LoginDTO;
+import com.dn.data.dto.LoginResponseDTO;
+import com.dn.security.UserPrincipal;
+import com.dn.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -16,8 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequestMapping( "/login" )

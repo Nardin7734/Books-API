@@ -1,4 +1,4 @@
-package com.interact.models;
+package com.dn.models;
 
 import jakarta.persistence.*;
 import lombok.Builder;

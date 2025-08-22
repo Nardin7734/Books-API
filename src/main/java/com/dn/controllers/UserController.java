@@ -1,7 +1,7 @@
-package com.interact.controllers;
+package com.dn.controllers;
 
-import com.interact.data.dto.UserDTO;
-import com.interact.services.UserServices;
+import com.dn.data.dto.UserDTO;
+import com.dn.services.UserServices;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

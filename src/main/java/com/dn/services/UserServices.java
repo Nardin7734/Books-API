@@ -1,15 +1,11 @@
-package com.interact.services;
+package com.dn.services;
 
-import com.interact.data.dto.UserDTO;
-import com.interact.mappers.ObjectMapper;
-import com.interact.models.User;
-import com.interact.repositories.UserRepository;
+import com.dn.data.dto.UserDTO;
+import com.dn.mappers.ObjectMapper;
+import com.dn.models.User;
+import com.dn.repositories.UserRepository;
 import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

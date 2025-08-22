@@ -1,7 +1,7 @@
-package com.interact.controllers;
+package com.dn.controllers;
 
-import com.interact.data.dto.LoanDTO;
-import com.interact.services.LoanServices;
+import com.dn.data.dto.LoanDTO;
+import com.dn.services.LoanServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

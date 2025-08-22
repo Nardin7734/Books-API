@@ -1,7 +1,6 @@
-package com.interact.repositories;
+package com.dn.repositories;
 
-import com.interact.data.dto.UserDTO;
-import com.interact.models.User;
+import com.dn.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

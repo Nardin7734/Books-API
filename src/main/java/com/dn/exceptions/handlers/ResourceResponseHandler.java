@@ -1,6 +1,6 @@
-package com.interact.exceptions.handlers;
+package com.dn.exceptions.handlers;
 
-import com.interact.exceptions.ExceptionResponse;
+import com.dn.exceptions.ExceptionResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

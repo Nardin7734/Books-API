@@ -1,7 +1,7 @@
-package com.interact.controllers;
+package com.dn.controllers;
 
-import com.interact.data.dto.BookDTO;
-import com.interact.services.BookServices;
+import com.dn.data.dto.BookDTO;
+import com.dn.services.BookServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

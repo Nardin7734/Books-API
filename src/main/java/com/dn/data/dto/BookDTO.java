@@ -1,7 +1,6 @@
-package com.interact.data.dto;
+package com.dn.data.dto;
 
-import com.interact.models.Book;
-import jakarta.persistence.*;
+import com.dn.models.Book;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -111,7 +110,7 @@ public class BookDTO implements Serializable
     public boolean equals(Object o)
     {
         if (o == null || getClass() != o.getClass()) return false;
-        com.interact.models.Book book = ( com.interact.models.Book ) o;
+        Book book = (Book) o;
         return getId() == book.getId() && Objects.equals(getCode(), book.getCode()) && Objects.equals(getTitle(), book.getTitle()) && Objects.equals(getAuthor(), book.getAuthor());
     }
 

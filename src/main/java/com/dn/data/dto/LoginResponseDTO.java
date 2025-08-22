@@ -1,4 +1,4 @@
-package com.interact.data.dto;
+package com.dn.data.dto;
 
 
 import java.io.Serializable;

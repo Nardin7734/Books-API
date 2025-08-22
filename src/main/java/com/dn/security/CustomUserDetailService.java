@@ -1,7 +1,7 @@
-package com.interact.security;
+package com.dn.security;
 
-import com.interact.data.dto.UserDTO;
-import com.interact.services.UserServices;
+import com.dn.data.dto.UserDTO;
+import com.dn.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

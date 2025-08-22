@@ -1,6 +1,6 @@
-package com.interact.repositories;
+package com.dn.repositories;
 
-import com.interact.models.User;
+import com.dn.models.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,10 +1,6 @@
-package com.interact.security;
+package com.dn.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
-
-import java.util.Collection;
 
 public class UserPrincipalAuthenticationToken extends AbstractAuthenticationToken
 {

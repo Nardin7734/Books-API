@@ -1,7 +1,4 @@
-package com.interact.data.dto;
-
-import com.interact.models.Book;
-import com.interact.models.User;
+package com.dn.data.dto;
 
 import java.time.LocalDate;
 

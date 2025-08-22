@@ -1,4 +1,4 @@
-package com.interact.exceptions;
+package com.dn.exceptions;
 
 import java.util.Date;
 

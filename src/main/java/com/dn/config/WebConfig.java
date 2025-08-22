@@ -1,4 +1,4 @@
-package com.interact.config;
+package com.dn.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
