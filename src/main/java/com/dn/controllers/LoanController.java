@@ -1,7 +1,7 @@
 package com.dn.controllers;
 
-import com.dn.data.dto.LoanDTO;
-import com.dn.services.LoanServices;
+import com.dn.data.dto.LentDTO;
+import com.dn.services.LendServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,49 +14,49 @@ import java.util.List;
 public class LoanController
 {
     @Autowired
-    private LoanServices loanServices;
+    private LendServices lendServices;
 
     @GetMapping( value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE )
-    public LoanDTO findById(@PathVariable long id ) throws Exception
+    public LentDTO findById(@PathVariable long id ) throws Exception
     {
-        return loanServices.findById( id );
+        return lendServices.findById( id );
     }
 
     @GetMapping( value = "/book-id/{bookId}", produces = MediaType.APPLICATION_JSON_VALUE )
-    public List<LoanDTO> findByBookId( @PathVariable long bookId ) throws Exception
+    public List<LentDTO> findByBookId(@PathVariable long bookId ) throws Exception
     {
-        return loanServices.findByBook( bookId );
+        return lendServices.findByBook( bookId );
     }
 
     @GetMapping( value = "/user-id", produces = MediaType.APPLICATION_JSON_VALUE )
-    public List<LoanDTO> findByUserId( @RequestParam long id ) throws Exception
+    public List<LentDTO> findByUserId(@RequestParam long id ) throws Exception
     {
-        return loanServices.findByUser( id );
+        return lendServices.findByUser( id );
     }
 
     @GetMapping( produces = MediaType.APPLICATION_JSON_VALUE )
-    public List<LoanDTO> findAll() throws Exception
+    public List<LentDTO> findAll() throws Exception
     {
-        return loanServices.findAll();
+        return lendServices.findAll();
     }
 
     @PostMapping( produces = MediaType.APPLICATION_JSON_VALUE )
-    public LoanDTO create( @RequestBody LoanDTO loanDto ) throws Exception
+    public LentDTO create(@RequestBody LentDTO lentDto) throws Exception
     {
-        return loanServices.create( loanDto );
+        return lendServices.create(lentDto);
     }
 
     @PutMapping( consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE )
-    public LoanDTO update( @RequestBody LoanDTO loanDto ) throws Exception
+    public LentDTO update(@RequestBody LentDTO lentDto) throws Exception
     {
-        return loanServices.update( loanDto );
+        return lendServices.update(lentDto);
     }
 
     @DeleteMapping( value = "/{id}")
     public ResponseEntity<?> delete(@PathVariable long id ) throws Exception
     {
-        loanServices.delete( id );
+        lendServices.delete( id );
         return ResponseEntity.noContent().build();
     }
 }

@@ -1,11 +1,17 @@
 package com.dn.models;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Objects;
 
+@Setter
+@Getter
 @Entity
+@Builder
 @Table( name = "books" )
 public class Book implements Serializable
 {
@@ -36,86 +42,6 @@ public class Book implements Serializable
     @Column( name = "language", nullable = false, length = 100 )
     private String language;
 
-
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId( int id )
-    {
-        this.id = id;
-    }
-
-    public String getCode()
-    {
-        return code;
-    }
-
-    public void setCode( String code )
-    {
-        this.code = code;
-    }
-
-    public String getTitle()
-    {
-        return title;
-    }
-
-    public void setTitle( String title )
-    {
-        this.title = title;
-    }
-
-    public String getAuthor()
-    {
-        return author;
-    }
-
-    public void setAuthor( String author )
-    {
-        this.author = author;
-    }
-
-    public String getPublisher()
-    {
-        return publisher;
-    }
-
-    public void setPublisher( String publisher )
-    {
-        this.publisher = publisher;
-    }
-
-    public int getYearRelease()
-    {
-        return yearRelease;
-    }
-
-    public void setYearRelease( int yearRelease )
-    {
-        this.yearRelease = yearRelease;
-    }
-
-    public String getGenre()
-    {
-        return genre;
-    }
-
-    public void setGenre( String genre )
-    {
-        this.genre = genre;
-    }
-
-    public String getLanguage()
-    {
-        return language;
-    }
-
-    public void setLanguage( String language )
-    {
-        this.language = language;
-    }
 
     @Override
     public boolean equals(Object o)

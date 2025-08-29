@@ -2,7 +2,7 @@ package com.dn.data.dto;
 
 import java.time.LocalDate;
 
-public class LoanDTO
+public class LentDTO
 {
 
     private long id;

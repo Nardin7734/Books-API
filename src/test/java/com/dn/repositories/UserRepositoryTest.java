@@ -17,13 +17,16 @@ class UserRepositoryTest
     @Autowired
     UserRepository userRepository;
 
+    //Arrange
+    String email = "teste@gmail.com";
+
+
     @Test
     @DisplayName( "Should find a user by e-mail" )
     void findByEmailSuccess()
     {
         //Arrange
         String name = "TesteName";
-        String email = "teste@gmail.com";
         String password = "TestePassword";
 
         User user = User.builder()
@@ -33,12 +36,21 @@ class UserRepositoryTest
 
         //Act
         userRepository.save( user );
-        Optional<User> userFound = this.userRepository.findByEmail( "teste@gmail.com" );
+       User userFound = this.userRepository.findByEmail( email );
 
         //Assert
         Assertions.assertNotNull( userFound );
-        Assertions.assertEquals( name, userFound.<Object>map(User::getName).orElse(null));
-        Assertions.assertEquals( email, userFound.<Object>map(User::getEmail).orElse(null));
-        Assertions.assertEquals( password, userFound.<Object>map(User::getPassword).orElse(null));
+        Assertions.assertEquals( name, userFound.getName() );
+        Assertions.assertEquals( email, userFound.getEmail() );
+        Assertions.assertEquals( password, userFound.getPassword() );
+    }
+
+    @Test
+    @DisplayName( "Should return null if doesn't exist the e-mail passed" )
+    void findByEmailFail()
+    {
+        User userFound = this.userRepository.findByEmail( email );
+
+        Assertions.assertNull( userFound );
     }
 }

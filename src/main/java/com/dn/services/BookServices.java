@@ -36,14 +36,14 @@ public class BookServices
     {
         logger.info( "Finding books by code: " + code );
 
-        return mapper.parseList( repository.findByCode( code ), BookDTO.class );
+        return mapper.parseList( repository.findByCodeContaining( code ), BookDTO.class );
     }
 
     public List<BookDTO> findByTitle( String title ) throws Exception
     {
         logger.info( "Finding books by title: " + title );
 
-        return mapper.parseList( repository.findByTitle( title ), BookDTO.class);
+        return mapper.parseList( repository.findByTitleContaining( title ), BookDTO.class);
     }
 
     public List<BookDTO> findByAuthor( String author ) throws Exception

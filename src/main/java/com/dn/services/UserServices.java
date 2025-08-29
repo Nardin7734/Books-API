@@ -33,14 +33,13 @@ public class UserServices
         return mapper.parseObject(entity, UserDTO.class);
     }
 
-    public UserDTO findByEmail(String email) throws Exception
+    public UserDTO findByEmail( String email ) throws Exception
     {
         logger.info("Finding user by e-mail: " + email);
 
-        var entity = repository.findByEmail(email)
-                .orElseThrow(() -> new BadRequestException("No records found for this email") );
+        var entity = repository.findByEmail(email);
 
-        return mapper.parseObject(entity, UserDTO.class);
+        return mapper.parseObject( entity, UserDTO.class );
     }
 
     public List<UserDTO> findAll() throws Exception {
